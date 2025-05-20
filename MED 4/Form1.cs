@@ -20,6 +20,8 @@ namespace MED_4
         private void Form1_Load(object sender, EventArgs e)
         {
             // Puedes dejarlo vacío o cargar datos si necesitas.
+            menuStrip1.BackColor = Color.Blue;
+            menuStrip1.ForeColor = Color.Black;
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -29,7 +31,7 @@ namespace MED_4
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Abre el Form2 al hacer clic en la opción del menú
+            
             Form2 frm = new Form2();
             frm.Show();
         }
@@ -39,5 +41,31 @@ namespace MED_4
             Form3 frm = new Form3();
             frm.Show();
         }
+
+        private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4();    
+            frm.Show();
+        }
+
+        private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.Show();
+
+        }
+
+        private void iNFORMACIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+        }
+
+        private void cONTACTANOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.Show();
+        }
     }
+    
 }
